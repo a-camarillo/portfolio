@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/Section.astro"
+---
+<Layout title="About Me">
+    <div class="about-content">
+        <div class="about-section">
+            <h1>
+                About Me
+            </h1>
+            <p>
+                A paragraph about me brother
+            </p>
+        </div>
+    </div>
+</Layout>
+<style>
+    .about-content {
+        display: grid;
+        margin: auto;
+        padding: 1.5rem;
+        max-width: 75ch; 
+    }
+    .about-section {
+        justify-content: left;
+        color: snow;
+    }
+</style>

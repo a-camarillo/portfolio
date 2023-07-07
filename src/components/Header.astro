@@ -1,0 +1,41 @@
+---
+export interface Props {
+    about: string;
+    projects: string;
+}
+
+const {about, projects} = Astro.props;
+---
+<div class="header">
+        <a href="/">
+            Home
+        </a>
+        <a href="/about">
+            {about}
+        </a>  
+        <a href="/projects">
+            {projects}
+        </a>
+</div>
+<style>
+    .header {
+        box-sizing: border-box;
+        display: flex;
+        background-color:#0E121C;
+        width: 100%;
+        justify-content: center;
+        align-items: baseline;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: white;
+        padding: 1rem;
+    }
+
+    a:hover {
+        color: violet;
+    }
+</style>

@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Anthony Camarillo">
+	<main>
+		<div class = "home-container">
+			<h1 class="text-gradient">Hi, my name is Anthony</h1>
+			<p>Software Engineer who enjoys simplicity, efficiency, and dogs; but mostly dogs.</p>
+		</div>
+		<div class="home-container">
+			<img src="/me.jpeg">
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		display: flex;
+		max-width: 60ch;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	@media screen and (min-width: 1200px) {
+		main {flex-direction: row;}
+	}
+
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	img {
+		width: 40%vw;
+		height: 40%vw;
+		border-radius: 5%;
+		box-shadow: 5px 5px 5px;
+	}
+	.home-container {
+		margin: 2rem;
+	}	
+	.home-container p {
+		font-size: 1.25rem;
+		color: lavender;
+	}
+</style>
