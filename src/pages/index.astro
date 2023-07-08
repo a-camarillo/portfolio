@@ -6,7 +6,7 @@ import Layout from '../layouts/Layout.astro';
 	<main>
 		<div class = "home-container">
 			<h1 class="text-gradient">Hi, my name is Anthony</h1>
-			<p>Software Engineer who enjoys simplicity, efficiency, and dogs; but mostly dogs.</p>
+			<p>Software Engineer who loves dogs.</p>
 		</div>
 		<div class="home-container">
 			<img src="/me.jpeg">
@@ -23,9 +23,19 @@ import Layout from '../layouts/Layout.astro';
 		flex-direction: column;
 		justify-content: center;
 	}
-
-	@media screen and (min-width: 1200px) {
-		main {flex-direction: row;}
+	img {
+		width: 100%;
+		border-radius: 5%;
+		box-shadow: 5px 5px 5px;
+	}
+	@media screen and (min-width: 700px) {
+		main {
+			flex-direction: row;
+		}
+		img {
+			width: 25vw; 
+			height: 25vw;
+		}
 	}
 
 	h1 {
@@ -39,12 +49,6 @@ import Layout from '../layouts/Layout.astro';
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
-	}
-	img {
-		width: 40%vw;
-		height: 40%vw;
-		border-radius: 5%;
-		box-shadow: 5px 5px 5px;
 	}
 	.home-container {
 		margin: 2rem;

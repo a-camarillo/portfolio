@@ -8,9 +8,18 @@ import Layout from "../layouts/Layout.astro";
             <h1>
                 Projects
             </h1>
+            <h2>
+                Here are some projects I've enjoyed working on.
+            </h2>
+        </div>
+        <div class="project-section">
+            <h2>
+                Broom
+            </h2>
             <p>
-                Lets put some project stuff right here brother.
+                Broom is a CLI tool I built to clean up all of the git branches that accumulate on my machine because I'm too forgetful to manually delete them. Check out this project <a href="https://github.com/a-camarillo/broom">here</a> on GitHub. 
             </p>
+            <img src="/broomDemo2.gif" id="broom-gif">
         </div>
     </div>
 </Layout>
@@ -23,5 +32,18 @@ import Layout from "../layouts/Layout.astro";
     }
     .project-section {
         color: snow;
+    }
+    .project-section p {
+        font-size: 1.35rem;
+    }
+    #broom-gif {
+        width: 100%
+    }
+    a {
+        text-decoration: none;
+    }
+    a:visited {
+        text-decoration: none;
+        color: violet;
     }
 </style>

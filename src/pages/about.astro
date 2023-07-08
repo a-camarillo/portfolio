@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Section from "../components/Section.astro"
 ---
 <Layout title="About Me">
     <div class="about-content">
@@ -9,7 +8,21 @@ import Section from "../components/Section.astro"
                 About Me
             </h1>
             <p>
-                A paragraph about me brother
+                My name is Anthony Camarillo and I am a self-taught software engineer trying to break into the tech industry. Coming from a mechanical engineering background I have an inclination for problem-solving and a curiosity for understanding how things work.
+            </p>
+            <p>
+                Through my learning I have exposed myself to various topics and technologies such as: web servers, database design, containerization, and UI/UX. As I grow as an engineer, I look forward to diving into more subjects especially streaming technologies and WebRTC. 
+            </p>
+        </div>
+        <div class="about-section">
+            <h1>
+                Interests
+            </h1>
+            <p>
+                My interests tend to vary and usually depend on what keeps me connected with my friends but two facets of me that are unwavering are my love for music and my passion for the Philadelphia Eagles(<b>Go Birds</b>&#x1F985).
+            </p>
+            <p>
+                Aside from my ever changing hobbies, I am particularly passionate about the human spirit and enjoying the little, sometimes mundane, moments which encompass our experience as humans. From engaging with strangers at music festivals to sitting around with loved ones and having a laugh, these experiences to me define what it means to live.
             </p>
         </div>
     </div>
@@ -18,11 +31,16 @@ import Section from "../components/Section.astro"
     .about-content {
         display: grid;
         margin: auto;
+        margin-top: 0;
         padding: 1.5rem;
-        max-width: 75ch; 
+        max-width: 90ch; 
     }
     .about-section {
         justify-content: left;
         color: snow;
+    }
+
+    .about-section p {
+        font-size: 1.35rem;
     }
 </style>
