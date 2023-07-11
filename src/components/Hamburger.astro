@@ -1,0 +1,43 @@
+---
+---
+<!-- <script>
+//const hamburger = document.querySelector('.hamburger')!
+
+//hamburger.addEventListener('click', () => {
+    //document.querySelector('.dropdown')?.setAttribute('display', 'flex');
+//})
+//</script>
+-->
+
+<div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<script>
+    const hamburger = document.querySelector('.hamburger')!
+
+    hamburger.addEventListener('click', () => {
+        document.querySelector('.dropdown')?.classList.toggle('enable');
+    })
+</script>
+<style>
+    .hamburger {
+        margin: auto;
+        padding-right: 20px;
+        cursor: pointer;
+        margin-bottom: 8px;
+    }
+    .hamburger span {
+        display: block;
+        width: 40px;
+        height: 5px;
+        margin-bottom: 10px;
+        background-color: snow;
+    } 
+	@media screen and (min-width: 850px) {
+        .hamburger {
+            display: none;
+        }
+    }
+</style>
