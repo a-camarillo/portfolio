@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import molly from '../images/meandmolly.jpg
 ---
 
 <Layout title="Anthony Camarillo">
@@ -9,7 +11,7 @@ import Layout from '../layouts/Layout.astro';
 			<p>Software Engineer who loves dogs.</p>
 		</div>
 		<div class="home-container">
-			<img src="/meandmolly.jpg">
+			<Image src={molly} alt="molly bear">
 		</div>
 	</main>
 </Layout>

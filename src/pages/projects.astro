@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from 'astro:assets';
+import broomDemo from '../images/broomDemo2.gif';
 ---
 
 <Layout title="Projects"> 
@@ -19,7 +21,7 @@ import Layout from "../layouts/Layout.astro";
             <p>
                 Broom is a CLI tool I built to clean up all of the git branches that accumulate on my machine because I'm too forgetful to manually delete them. Check out this project <a href="https://github.com/a-camarillo/broom">here</a> on GitHub. 
             </p>
-            <img src="/broomDemo2.gif" id="broom-gif">
+            <Image src={broomDemo} alt="demo for broom">
         </div>
         <div class="project-section">
             <h2>
