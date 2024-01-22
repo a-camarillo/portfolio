@@ -11,6 +11,6 @@
   },
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.0.4",
-    "astro": "^2.7.4"
+    "astro": "^4.0.0"
   }
 }
