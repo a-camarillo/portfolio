@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Picture } from 'astro:assets';
+
+const doggos = await Astro.glob('../images/doggos/*.{jpg,png,PNG,JPG,jpeg}').then(files => {
+    return files.map(file => file.default)
+});
+---
+
+<Layout title='Doggos'>
+    <div class="grid place-items-center grid-cols-3 gap-2 m-auto max-w-[90ch]">
+        {doggos.map((doggo) => (
+            <Picture src={doggo} formats={['webp']} alt="another doge"></Picture>
+        ))}
+    </div>
+</Layout>
+
+<style>
+    img {
+		width: 400px;
+		height: 400px;
+	}
+</style>

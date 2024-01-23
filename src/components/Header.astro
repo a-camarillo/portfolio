@@ -4,9 +4,10 @@ import Hamburger from './Hamburger.astro';
 export interface Props {
     about: string;
     projects: string;
+    dogs: string;
 }
 
-const {about, projects} = Astro.props;
+const {about, projects, dogs} = Astro.props;
 ---
 <div class="header">
     <div class="header-items">
@@ -20,6 +21,9 @@ const {about, projects} = Astro.props;
             </a>  
             <a href="/projects">
                 {projects}
+            </a>
+            <a href="/dogs">
+                {dogs}
             </a>
         </div>
         <div class="logos">

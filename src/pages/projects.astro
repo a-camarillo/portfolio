@@ -5,8 +5,8 @@ import broomDemo from '../images/broomDemo2.gif';
 ---
 
 <Layout title="Projects"> 
-    <div class="project-content">
-        <div class="project-section">
+    <div class="grid m-auto max-w-[75ch] p-1.5">
+        <div class="text-white">
             <h1>
                 Projects
             </h1>
@@ -14,20 +14,20 @@ import broomDemo from '../images/broomDemo2.gif';
                 Here are some projects I've enjoyed working on.
             </h2>
         </div>
-        <div class="project-section">
+        <div class="text-white">
             <h2>
                 Broom
             </h2>
-            <p>
+            <p class="text-[1.35rem]">
                 Broom is a CLI tool I built to clean up all of the git branches that accumulate on my machine because I'm too forgetful to manually delete them. Check out this project <a href="https://github.com/a-camarillo/broom">here</a> on GitHub. 
             </p>
             <Image src={broomDemo} alt="demo for broom">
         </div>
-        <div class="project-section">
+        <div class="text-white">
             <h2>
                 Quick-Repo
             </h2>
-            <p>
+            <p class="text-[1.35rem]">
                 Quick-Repo is a CLI tool I built to bootstrap setting up a local git repository along with files you might want such as a README, License, and entry point. Check out this project <a href="https://github.com/a-camarillo/quick-repo">here</a> on GitHub.
             </p>
             <img src="https://raw.githubusercontent.com/a-camarillo/quick-repo/main/images/quickrepodemo.gif">
@@ -35,21 +35,6 @@ import broomDemo from '../images/broomDemo2.gif';
     </div>
 </Layout>
 <style>
-    .project-content {
-        display: grid;
-        margin: auto;
-        padding: 1.5rem;
-        max-width: 75ch; 
-    }
-    .project-section {
-        color: snow;
-    }
-    .project-section p {
-        font-size: 1.35rem;
-    }
-    #broom-gif {
-        width: 100%
-    }
     a {
         text-decoration: underline;
     }
