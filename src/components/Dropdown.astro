@@ -1,46 +1,24 @@
 ---
 ---
-<div class="dropdown">
-    <span class="dropdown-list-item">
-        <a href="/">Home</a>
+<div class="border-box flex flex-col w-full justify-center items-center bg-[#0e121c] dropdown md:hidden">
+    <span class="m-[5px] text-center">
+        <a class="no-underline uppercase" href="/">Home</a>
     </span>
-    <span class="dropdown-list-item">
-        <a href="/about">About</a>
+    <span class="m-[5px] text-center">
+        <a class="no-underline uppercase" href="/about">About</a>
     </span>
-    <span class="dropdown-list-item">
-        <a href="/projects">Projects</a>
+    <span class="m-[5px] text-center">
+        <a class="no-underline uppercase" href="/projects">Projects</a>
+    </span>
+    <span class="m-[5px] text-center">
+        <a class="no-underline uppercase" href="/dogs">Dogs</a>
     </span>
 </div>
 <style>
 .dropdown {
-    box-sizing: border-box;
     display: none;
-    flex-direction: column;
-    background-color:#0E121C;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
 }
 .enable {
     display: flex;
-}
-@media screen and (min-width: 850px) {
-    .dropdown {
-        display: none;
-    }
-}
-.dropdown-list-item {
-    margin: 5px;
-    width: inherit;
-    text-align: center;
-}
-.dropdown-list-item:hover {
-    background-color:#171e2e;
-}
-.dropdown-list-item a {
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 100%;
 }
 </style>
