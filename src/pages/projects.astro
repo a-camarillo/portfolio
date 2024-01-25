@@ -5,41 +5,34 @@ import broomDemo from '../images/broomDemo2.gif';
 ---
 
 <Layout title="Projects"> 
-    <div class="grid m-auto max-w-[75ch] p-1.5">
-        <div class="text-white">
-            <h1>
+    <div class="grid m-auto max-w-[75ch] p-1.5 prose">
+        <div>
+            <h1 class="text-white">
                 Projects
             </h1>
-            <h2>
+            <h2 class="text-white">
                 Here are some projects I've enjoyed working on.
             </h2>
         </div>
         <div class="text-white">
-            <h2>
+            <h2 class="text-white">
                 Broom
             </h2>
             <p class="text-[1.35rem]">
-                Broom is a CLI tool I built to clean up all of the git branches that accumulate on my machine because I'm too forgetful to manually delete them. Check out this project <a href="https://github.com/a-camarillo/broom">here</a> on GitHub. 
+                Broom is a CLI tool I built to clean up all of the git branches that accumulate on my machine because I'm too forgetful to manually delete them. Check out this project <a class="visited:text-[#ee82ee] text-white" href="https://github.com/a-camarillo/broom">here</a> on GitHub. 
             </p>
             <Image src={broomDemo} alt="demo for broom">
         </div>
         <div class="text-white">
-            <h2>
+            <h2 class="text-white">
                 Quick-Repo
             </h2>
             <p class="text-[1.35rem]">
-                Quick-Repo is a CLI tool I built to bootstrap setting up a local git repository along with files you might want such as a README, License, and entry point. Check out this project <a href="https://github.com/a-camarillo/quick-repo">here</a> on GitHub.
+                Quick-Repo is a CLI tool I built to bootstrap setting up a local git repository along with files you might want such as a README, License, and entry point. Check out this project <a class="visited:text-[#ee82ee] text-white" href="https://github.com/a-camarillo/quick-repo">here</a> on GitHub.
             </p>
             <img src="https://raw.githubusercontent.com/a-camarillo/quick-repo/main/images/quickrepodemo.gif">
         </div>
     </div>
 </Layout>
-<style>
-    a {
-        text-decoration: underline;
-    }
-    a:visited {
-        text-decoration: none;
-        color: violet;
-    }
+<style> 
 </style>

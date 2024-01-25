@@ -2,9 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 ---
 <Layout title="About Me">
-    <div class="grid m-auto mt-0 max-w-[90ch] p-1.5">
-        <div class="text-white">
-            <h1>
+    <div class="prose grid m-auto mt-0 max-w-35ch md:max-w-[80ch] p-1.5 text-white">
+        <div>
+            <h1 class="text-white">
                 About Me
             </h1>
             <p class="text-[1.35rem]">
@@ -14,8 +14,8 @@ import Layout from "../layouts/Layout.astro";
                 Through my learning I have exposed myself to various topics and technologies such as: web servers, database design, containerization, and UI/UX. 
             </p>
         </div>
-        <div class="text-white">
-            <h1>
+        <div>
+            <h1 class="text-white">
                 Interests
             </h1>
             <p class="text-[1.35rem]">
@@ -28,18 +28,4 @@ import Layout from "../layouts/Layout.astro";
     </div>
 </Layout>
 <style>
-    .about-content {
-        display: grid;
-        margin: auto;
-        margin-top: 0;
-        padding: 1.5rem;
-        max-width: 90ch; 
-    }
-    .about-section {
-        color: snow;
-    }
-
-    .about-section p {
-        font-size: 1.35rem;
-    }
 </style>
