@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
 import molly from '../images/meandmolly.jpg';
 ---
 
@@ -10,8 +10,8 @@ import molly from '../images/meandmolly.jpg';
 			<h1 class="bg-clip-text text-transparent bg-gradient-to-tr from-[#7c3aed] via-[#da62c4] via-60% to-[#ffffff] to-90% text-[3rem] m-0 font-extrabold">Hi, my name is Anthony</h1>
 			<p class="text-[1.25rem] text-[#e6e6fa]">Engineer who loves dogs.</p>
 		</div>
-		<div class="m-8 flex justify-center">
-			<Image class="w-[50vw] h-[35vh] md:w-[35vw] md:h-[50vh]" src={molly} alt="molly bear">
+		<div class="m-8 flex justify-center w-[50vw] bg-[#0E121C]">
+			<Picture class="p-1 w-[50vw] h-[35vh] md:w-[35vw] md:h-[35vh] lg:h-[50vh]" src={molly} alt="molly bear"></Picture>
 		</div>
 	</main>
 </Layout>
