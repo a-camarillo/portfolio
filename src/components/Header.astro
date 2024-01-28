@@ -4,10 +4,10 @@ import Hamburger from './Hamburger.astro';
 export interface Props {
     about: string;
     projects: string;
-    dogs: string;
+    doggos: string;
 }
 
-const {about, projects, dogs} = Astro.props;
+const {about, projects, doggos} = Astro.props;
 ---
 <div class="box-border flex max-w-full header justify-center items-baseline w-full m-0 bg-[#0E121C]">
     <div class="max-w-4/5 flex m-auto">
@@ -22,8 +22,8 @@ const {about, projects, dogs} = Astro.props;
             <a class="uppercase text-white text-[1.5rem] p-4 hover:text-violet" href="/projects">
                 {projects}
             </a>
-            <a class="uppercase text-white text-[1.5rem] p-4 hover:text-violet" href="/dogs">
-                {dogs}
+            <a class="uppercase text-white text-[1.5rem] p-4 hover:text-violet" href="/doggos">
+                {doggos}
             </a>
         </div>
         <div class="flex flex-row box-content m-auto">
