@@ -24,7 +24,6 @@
       default = pkgs.npmlock2nix.v2.shell {
         src = ./.;
         nodejs = pkgs.nodejs_latest;
-        node_modules_mode = "copy";
       };
     };
   };
