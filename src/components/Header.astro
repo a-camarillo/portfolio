@@ -1,13 +1,5 @@
 ---
 import Hamburger from './Hamburger.astro';
-
-export interface Props {
-    about: string;
-    projects: string;
-    doggos: string;
-}
-
-const {about, projects, doggos} = Astro.props;
 ---
 <div class="box-border flex max-w-full header justify-center items-baseline w-full m-0 bg-[#0E121C]">
     <div class="max-w-4/5 flex m-auto">
@@ -17,13 +9,13 @@ const {about, projects, doggos} = Astro.props;
                 Home
             </a>
             <a class="uppercase text-white text-[1.5rem] p-4 hover:text-violet" href="/about">
-                {about}
+                about
             </a>  
-            <a class="uppercase text-white text-[1.5rem] p-4 hover:text-violet" href="/projects">
-                {projects}
+            <a class="uppercase text-white text-[1.5rem] p-4 hover:text-violet" href="/blog">
+                blog
             </a>
             <a class="uppercase text-white text-[1.5rem] p-4 hover:text-violet" href="/doggos">
-                {doggos}
+                doggos
             </a>
         </div>
         <div class="flex flex-row box-content m-auto">

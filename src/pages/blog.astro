@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import PostList from '../components/PostList.astro';
+
+const blogPosts = await getCollection('blog')
+const techPosts = blogPosts.filter((post) => post.data.category == 'tech')
+const otherPosts = blogPosts.filter((post) => post.data.category == 'other')
+---
+<Layout title="Blog Posts">
+  <div class="prose max-w-prose mx-auto">
+    <h1 class="my-10 mx-auto text-white text-3xl">
+      A nice place to chill, no matter how you arrived.
+    </h1>
+    <h2 class="my-10 ml-0 mr-auto text-white text-3xl"> Technology </h2>
+      <PostList>
+          {techPosts.map(post => (
+          <li>
+            <a class="text-white" href={`/blog/${post.slug}`}>{post.data.title}</a> 
+          </li>
+          ))}
+    </PostList>
+    <h2 class="my-10 mx-auto text-white text-3xl"> Not Technology </h2>
+      <PostList>
+          {otherPosts.map(post => (
+          <li>
+            <a href={`/blog/${post.slug}`}>{post.data.title}</a> 
+          </li>
+          ))}
+    </PostList>
+  </div>
+</Layout>
